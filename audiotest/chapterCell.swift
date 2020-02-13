@@ -10,4 +10,5 @@ import UIKit
 
 class chapterCell: UICollectionViewCell {
     
+    @IBOutlet weak var chapter: UILabel!
 }
