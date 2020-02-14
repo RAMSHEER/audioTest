@@ -19,12 +19,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-ge-0eX">
                                 <rect key="frame" x="10" y="762" width="394" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-0e-XWY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-0e-XWY" customClass="LoadingUIButton" customModule="audiotest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="30"/>
                                         <state key="normal" title="play/pause"/>
-                                        <connections>
-                                            <action selector="playPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQc-qi-EaL"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5W-ER-wPA">
                                         <rect key="frame" x="131.5" y="0.0" width="131" height="30"/>
@@ -85,6 +82,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="RPz-Ok-2Tb"/>
+                    <connections>
+                        <outlet property="playButton" destination="bS4-0e-XWY" id="36T-Qd-bfH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
